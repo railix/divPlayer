@@ -1,3 +1,3 @@
 src/*.js linguist-language=Java
 src/fonts/* linguist-vendored
-Linguist::FileBlob.new("divplayer.js").generated? # => true
+Linguist::FileBlob.new("src/divplayer.js").generated? # => true
