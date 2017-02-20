@@ -1,2 +1,2 @@
-*.js linguist-language=JavaScript
-*.css linguist-language=CSS
+src/*.js linguist-language=JavaScript
+src/*.css linguist-language=CSS
