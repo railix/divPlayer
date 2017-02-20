@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: "icons";
+    src:  url('fonts/icons.eot?t441hj');
+    src:  url('fonts/icons.eot?t441hj#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?t441hj') format('truetype'),
+    url('fonts/icons.woff?t441hj') format('woff'),
+    url('fonts/icons.svg?t441hj#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dv-container {
+    background-color: #000;
+    position: relative;
+    outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.dv-error-msg {
+    display: none;
+    position: absolute;
+    color: #FFF;
+    border: 1px dashed #FF0000;
+    font-size: 13px;
+    top: 2px;
+    left: 2px;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    z-index: 10;
+}
+.dv-error-msg:before {
+    font-size: 25px;
+    content: "\ea0f";
+}
+
+.dv-start-button {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 95px;
+    height: 70px;
+    background-color: #212224;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid #B9B9C4;
+    color: #B9B9C4;
+    font-size: 64px;
+    line-height: 70px;
+    padding-left: 4px;
+    text-align: center;
+}
+
+.dv-start-button:hover {
+    border: 3px solid #9C9DAA;
+}
+
+.dv-loading {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.dv-loading-icon {
+    border: 6px solid gray;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    width: 35px;
+    height: 35px;
+    margin: 5px auto;
+    border-radius: 50%;
+    position: relative;
+    animation: round 3s linear infinite;
+}
+
+@keyframes round {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.dv-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dv-poster {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.dv-controls {
+    width: 100%;
+    height: 34px;
+    position: absolute;
+    bottom: 0;
+    font-family: Helvetica, Arial;
+    background-color: rgba(28, 28, 32, 0.8);
+    float: left;
+}
+
+.dv-video {
+    width: 100%;
+    height: 100%;
+}
+
+.dv-videoSource {
+    width: 100%;
+    height: 100%;
+}
+
+.dv-ctrl-left {
+    height: 100%;
+    display: table-cell;
+    min-width: 86px;
+}
+
+.dv-play-button {
+    width: 40px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+}
+
+.dv-current-time {
+    float: left;
+    font-size: 11px;
+    color: #fff;
+    line-height: 34px;
+    margin-right: 4px;
+    width: 40px;
+    text-align: center;
+    cursor: default;
+}
+
+.dv-ctrl-center {
+    height: 100%;
+    display: table-cell;
+    width: 100%;
+}
+
+.dv-seek-bar-rail {
+    width: 100%;
+    height: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dv-m-controls {
+    width: 100%;
+    height: 44px;
+    position: absolute;
+    bottom: 0;
+    font-family: Helvetica, Arial;
+    background-color: rgba(28, 28, 32, 0.8);
+    float: left;
+}
+
+.dv-m-seek-bar-rail {
+    width: 100%;
+    height: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dv-m-seek-bar {
+    width: 100%;
+    height: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    position: relative;
+    background-color: #404242;
+    float: left;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dv-m-play-progress {
+    height: 8px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background: #247CB7;
+    position: absolute;
+}
+
+.dv-m-load-progress {
+    height: 8px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background: #94A2A2;
+    position: absolute;
+}
+
+.dv-m-vol-rail {
+    width: 75px;
+    height: 28px;
+    float: left;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.dv-m-vol-bar {
+    width: 75px;
+    height: 14px;
+    background-color: #404242;
+    float: left;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dv-m-vol-lvl {
+    height: 12px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background: #247CB7;
+    position: absolute;
+    width: 50%;
+}
+
+.dv-m-ctrl-button-icon {
+    color: #fff;
+    font-size: 16px;
+    line-height: 44px;
+}
+
+.dv-m-current-time {
+    float: left;
+    font-size: 11px;
+    color: #fff;
+    line-height: 44px;
+    margin-right: 4px;
+    width: 40px;
+    text-align: center;
+    cursor: default;
+}
+
+.dv-m-total-time {
+    float: left;
+    font-size: 11px;
+    color: #fff;
+    line-height: 44px;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 40px;
+    text-align: center;
+    cursor: default;
+}
+
+.dv-seek-bar {
+    width: 100%;
+    height: 6px;
+    position: relative;
+    background-color: #404242;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    float: left;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dv-play-progress {
+    height: 4px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background: #247CB7;
+    position: absolute;
+}
+
+.dv-load-progress {
+    height: 4px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background: #94A2A2;
+    position: absolute;
+}
+
+.dv-seek-bar-time {
+    position: relative;
+    display: none;
+    bottom: 37px;
+    width: 60px;
+    height: 18px;
+}
+
+.dv-display-time {
+    position: relative;
+    background-color: #2B2B31;
+    opacity: 1;
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 18px;
+    line-height: 18px;
+    left: -20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.dv-ctrl-right {
+    height: 100%;
+    display: table-cell;
+    min-width: 208px;
+}
+
+.dv-total-time {
+    float: left;
+    font-size: 11px;
+    color: #fff;
+    line-height: 34px;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 40px;
+    text-align: center;
+    cursor: default;
+}
+
+.dv-mute-button {
+    width: 22px;
+    height: 100%;
+    float: left;
+    text-align: left;
+    margin-left: 6px;
+    margin-right: 2px;
+    padding-left: 4px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dv-vol-rail {
+    width: 75px;
+    height: 20px;
+    float: left;
+    position: relative;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.dv-vol-bar {
+    width: 75px;
+    height: 8px;
+    background-color: #404242;
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dv-vol-lvl {
+    height: 6px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background: #247CB7;
+    position: absolute;
+    width: 50%;
+}
+
+.dv-fs-button {
+    width: 40px;
+    height: 100%;
+    float: left;
+    margin-left: 11px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+}
+
+.dv-fs {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.dv-button-icons {
+    font-family: "icons" !important;
+}
+
+.dv-ctrl-button-icon {
+    color: #fff;
+    font-size: 16px;
+    line-height: 34px;
+}
+
+.dv-start-button:hover:before {
+    color: #9C9DAA;
+}
+
+.dv-paused:before {
+    content: "\e904";
+}
+
+.dv-playing:before {
+    content: "\e905";
+}
+
+.dv-vol-mute:before {
+    content: "\e909";
+}
+
+.dv-vol1:before {
+    content: "\e908";
+}
+
+.dv-vol2:before {
+    content: "\e907";
+}
+
+.dv-vol3:before {
+    content: "\e906";
+}
+
+.dv-fs-enlarge:before {
+    content: "\e900";
+}
+
+.dv-fs-shrink:before {
+    content: "\e901";
+}
+
+.dv-ctrl-button-icon:hover:before {
+    color: #9C9DAA;
+}
+
+.dv-inact {
+    cursor: none;
+}
+
+.dv-container.dv-inact .dv-controls {
+    display: none;
+}
+.dv-container.dv-inact .dv-seek-bar-time {
+    display: none;
+}
+
+.dv-container.dv-inact .dv-m-controls {
+    display: none;
+}
+.dv-container.dv-inact .dv-m-seek-bar-time {
+    display: none;
+}
