@@ -1,1 +1,4 @@
 src/fonts/* linguist-vendored
+* text=auto
+*.gitattributes text
+*.md text
