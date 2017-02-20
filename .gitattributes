@@ -1,1 +1,1 @@
-Linguist::FileBlob.new("divplayer.js").generated? # => false
+*.js linguist-language=JavaScript
