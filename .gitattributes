@@ -1,3 +1,3 @@
-*.js linguist-language=JavaScript
-README.md linguist-documentation
-LICENSE linguist-documentation
+divplayer.js linguist-language=JavaScript
+README.md linguist-vendored
+LICENSE linguist-vendored
