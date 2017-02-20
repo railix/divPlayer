@@ -1,1 +1,1 @@
-Linguist::FileBlob.new("divplayer.js").generated? # => true
+Linguist::FileBlob.new("divplayer.js").generated? # => false
