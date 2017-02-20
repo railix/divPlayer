@@ -1,3 +1,13 @@
-### Welcome to GitHub Pages
+# divPlayer
 
-You can use the [editor on GitHub](https://github.com/railix/divPlayer/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+divPlayer is a HTML5 video player.
+
+### Screenshots
+
+## Features
+
+## How to use
+
+## Contact
+
+## License
