@@ -1,1 +1,2 @@
-src/divplayer.js linguist-language=Java
+src/*.js linguist-language=Java
+src/fonts/* linguist-vendored
