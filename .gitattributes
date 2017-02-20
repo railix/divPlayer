@@ -1,2 +1,2 @@
-*.js linguist-language=Java
+*.js linguist-language=Javascript
 src/divplayer.js linguist-vendored=false
