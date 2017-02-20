@@ -20,7 +20,7 @@
 ### Player settings
 
 ## Contact
-If you have any remarks / ideas about improvement / questions / or technical issues, do not hesitate to contact me through GitHub or open a thread in the **Issues** section.
+If you have any general remarks/questions/ideas about improvement/requests/technical issues, do not hesitate to contact me through GitHub or open a thread in the **Issues** section.
 
 ## License
 MIT License
