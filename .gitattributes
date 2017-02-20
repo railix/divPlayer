@@ -1,3 +1,3 @@
-src/fonts/* linguist-vendored
-src/*.js linguist-language=JavaScript
-src/*.css linguist-language=CSS
+src/* linguist-vendored
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
