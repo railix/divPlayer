@@ -6,15 +6,22 @@
 
 
 ## Features
+**divPlayer** version **0.1** supports:
+- Basic functionalities like: **play/pause**, **full screen**, **seek**, **change/mute/unmute volume**.
+- Multiple players on same page.
+- Specify different player settings like **width**, **height**, **autoplay** etc. for each player (see [Player settings](https://github.com/railix/divPlayer#player-settings)).
+- Seeking through the video by clicking on the progress bar and by dragging it.
+- Display video time by hovering mouse cursor over the progress bar.
+- Limited CPU footprint while seeking through video.
 
+### Browser support
 
 ## How to use
 
+### Player settings
 
 ## Contact
 If you have any remarks / ideas about improvement / questions / or technical issues, do not hesitate to contact me through GitHub or open a thread in the **Issues** section.
 
 ## License
 MIT License
-
-You can use the [editor on GitHub](https://github.com/railix/divPlayer/edit/master/README.md)
