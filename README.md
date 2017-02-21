@@ -3,7 +3,7 @@
 **divPlayer** is a HTML5 video player written in JavaScript, CSS and HTML. The player's HTML content is generated in 1 or more `div` containers of you choice. Multiple player instances are supported (see [How to use](https://github.com/railix/divPlayer#how-to-use)).
 
 ### Screenshots
-
+![image1](screen01.png?raw=true)
 
 ## Features
 **divPlayer** version **0.1** supports:
