@@ -2,7 +2,16 @@
 
 **divPlayer** is a HTML5 video player written in JavaScript, CSS and HTML. The player's HTML content is generated in 1 or more `div` containers of you choice. Multiple player instances are supported (see [How to use](https://github.com/railix/divPlayer#how-to-use)).
 
-### Screenshots
+## Content
+* [Screenshots](https://github.com/railix/divPlayer#screenshots)
+* [Features](https://github.com/railix/divPlayer#features)
+* [Browser support](https://github.com/railix/divPlayer#browser-support)
+* [How to use](https://github.com/railix/divPlayer#how-to-use)
+* [Player settings](https://github.com/railix/divPlayer#player-settings)
+* [Contact](https://github.com/railix/divPlayer#contact)
+* [License](https://github.com/railix/divPlayer#license)
+
+## Screenshots
 <img src="https://cloud.githubusercontent.com/assets/25888776/23147596/832b089c-f7e0-11e6-9228-7e829b52fc42.png" width="480" height="290" />
 <img src="https://cloud.githubusercontent.com/assets/25888776/23147598/86ecb110-f7e0-11e6-8ebd-de4c7588b6e8.png" width="480" height="290" />
 ## Features
@@ -15,6 +24,26 @@
 - Limited CPU footprint while seeking through video.
 
 ### Browser support
+Tested and supported on the following browsers:
+
+#### Desktop
+| browser        | version     | OS          |
+| ---------------|:------------|:------------|
+| Firefox        | 49, 50, 51  |             |
+| Chrome         | 55, 56      |             |
+| IE             | 11          |             |
+| Edge           | 20.10240    |             |
+| Opera          | 43          |             |
+**Safari: not tested, but if you have tested it, please provide feedback.**
+
+#### Mobile
+| browser                      | version     | OS            |
+| -----------------------------|:------------|:--------------|
+| Firefox                      | 50.1.0      | Android 6.0.1 |
+| Chrome                       | 55          | Android 6.0.1 |
+| Internet (Samsung browser)   | 4.0.30      | Android 6.0.1 |
+|                              |             |               |
+
 
 ## How to use
 Download the content of the **src** folder above (**divplayer.css**, **divplayer.js** and **fonts** folder) and see examples below.
