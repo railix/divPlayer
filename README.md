@@ -20,7 +20,7 @@
 Download the content of the **src** folder above (**divplayer.css**, **divplayer.js** and **fonts** folder) and see examples below.
 
 ### 1 player on webpage
-```markdown
+```HTML
 <head>
   <link rel="stylesheet" href="divplayer.css"/>
 </head>
@@ -39,7 +39,7 @@ Download the content of the **src** folder above (**divplayer.css**, **divplayer
 </body>
 ```
 ### 2 players in webpage
-```markdown
+```HTML
 <head>
   <link rel="stylesheet" href="divplayer.css"/>
 </head>
@@ -64,7 +64,16 @@ Download the content of the **src** folder above (**divplayer.css**, **divplayer
 ```
   
 ### Player settings
-
+| property        | value examples                   | required | type   | info                              |
+| --------------- |:---------------------------------|:--------:| ------:|:----------------------------------|
+| id              |         -                        | yes      | string | id of `div` element               |
+| src             |         -                        | yes      | string | URL of video file                 |
+| width           | "854"                            | no       | string | width of player (default: "854")  |
+| height          | "480"                            | no       | string | height of player (default: "480") |
+| img             | "http://link/to/img.png"         | no       | string | URL of poster image for player to display when web page loads|
+| autoplay        |  "true" / "false"                | no       | string | start playing automatically after page load (default: "false")|
+| preload         |  "none" / "metadata" / "auto"    | no       | string | `"none"` = do not load video data when page loads (default), `"metadata"` = load only video duration, `"auto"` = start buffering video when page is loaded|
+| mobileui        |  "0" / "1" / "2"                 | no       | string | use mobile UI for mobile devices (bigger controlbar). `"0"` = use mobile UI if mobile device is auto-detected (default), `"1"` = always use mobile UI, `"2"` = always use non-mobile UI |
 
 ## Contact
 If you have any general remarks/questions/ideas about improvement/requests/technical issues, do not hesitate to contact me through GitHub or open a thread in the **Issues** section.
