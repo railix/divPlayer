@@ -17,8 +17,54 @@
 ### Browser support
 
 ## How to use
+Download the content of the **src** folder above (**divplayer.css**, **divplayer.js** and **fonts** folder) and see examples below.
 
+### 1 player on webpage
+```markdown
+<head>
+  <link rel="stylesheet" href="divplayer.css"/>
+</head>
+<body>
+
+  <div id="myVideo"></div>
+  
+  <script type="text/javascript" src="divplayer.js"></script>
+  <script>
+    divPlayer.start([
+    {
+      id: "myVideo",
+      src: "http://link/to/video/file.mp4"
+    }]);
+  </script>
+</body>
+```
+### 2 players in webpage
+```markdown
+<head>
+  <link rel="stylesheet" href="divplayer.css"/>
+</head>
+<body>
+
+  <div id="myVideo"></div>
+  <div id="myVideo2"></div>
+  
+  <script type="text/javascript" src="divplayer.js"></script>
+  <script>
+    divPlayer.start([
+    {
+      id: "myVideo",
+      src: "http://link/to/video/file.mp4"
+    },
+    {
+      id: "myVideo2",
+      src: "http://link/to/video/file2.mp4"
+    }]);
+  </script>
+</body>
+```
+  
 ### Player settings
+
 
 ## Contact
 If you have any general remarks/questions/ideas about improvement/requests/technical issues, do not hesitate to contact me through GitHub or open a thread in the **Issues** section.
