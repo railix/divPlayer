@@ -27,13 +27,13 @@
 Tested and supported on the following browsers:
 
 #### Desktop
-| browser        | version     | OS          |
-| ---------------|:------------|:------------|
-| Firefox        | 49, 50, 51  |             |
-| Chrome         | 55, 56      |             |
-| IE             | 11          |             |
-| Edge           | 20.10240    |             |
-| Opera          | 43          |             |
+| browser        | version     |
+| ---------------|:------------|
+| Firefox        | 49, 50, 51  |
+| Chrome         | 55, 56      |
+| IE             | 11          |
+| Edge           | 20.10240    |
+| Opera          | 43          |
 **Safari: not tested, but if you have tested it, please provide feedback.**
 
 #### Mobile
