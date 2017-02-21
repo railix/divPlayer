@@ -37,13 +37,11 @@ Tested and supported on the following browsers:
 **Safari: not tested, but if you have tested it, please provide feedback.**
 
 #### Mobile
-| browser                      | version     | OS            |
-| -----------------------------|:------------|:--------------|
-| Firefox                      | 50.1.0      | Android 6.0.1 |
-| Chrome                       | 55          | Android 6.0.1 |
-| Internet (Samsung browser)   | 4.0.30      | Android 6.0.1 |
-|                              |             |               |
-
+| browser                      | version          | OS                   |
+| -----------------------------|:-----------------|:---------------------|
+| Firefox                      | 50.1.0           | Android 6.0.1        |
+| Chrome                       | 55               | Android 6.0.1, 5.0.2 |
+| Internet (Samsung browser)   | 3.2.38, 4.0.30   | Android 5.0.2, 6.0.1 |
 
 ## How to use
 Download the content of the **src** folder above (**divplayer.css**, **divplayer.js** and **fonts** folder) and see examples below.
