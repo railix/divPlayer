@@ -29,19 +29,19 @@ Tested and supported on the following browsers:
 #### Desktop
 | browser        | version     |
 | ---------------|:------------|
-| Firefox        | 49, 50, 51  |
-| Chrome         | 55, 56      |
+| Firefox        | >= 49       |
+| Chrome         | >= 55       |
 | IE             | 11          |
 | Edge           | 20.10240    |
 | Opera          | 43          |
 **Safari: not tested, but if you have tested it, please provide feedback.**
 
 #### Mobile
-| browser                      | version          | OS                   |
-| -----------------------------|:-----------------|:---------------------|
-| Firefox                      | 50.1.0           | Android 6.0.1        |
-| Chrome                       | 55               | Android 6.0.1, 5.0.2 |
-| Internet (Samsung browser)   | 3.2.38, 4.0.30   | Android 5.0.2, 6.0.1 |
+| browser                      | version          | OS                |
+| -----------------------------|:-----------------|:------------------|
+| Firefox                      | >= 50.1          | >= Android 5.0    |
+| Chrome                       | >= 55            | >= Android 5.0    |
+| Internet (Samsung browser)   | >= 3.2.38        | >= Android 5.0    |
 
 ## How to use
 Download the content of the **src** folder above (**divplayer.css**, **divplayer.js** and **fonts** folder) and see examples below.
