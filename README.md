@@ -34,7 +34,7 @@ Tested and supported on the following browsers:
 | IE             | >= 11       |
 | Edge           | >= 20.10240 |
 | Opera          | >= 43       |
-**May work on other/lower versions of browsers.**
+**May work on other/lower versions of browsers.**  
 **Safari: not tested, but if you have tested it, please provide feedback.**
 
 #### Mobile
