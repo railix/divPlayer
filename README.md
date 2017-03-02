@@ -66,7 +66,7 @@ Download the content of the **src** folder above (**divplayer.css**, **divplayer
   </script>
 </body>
 ```
-### 2 players in webpage
+### 2 players on webpage
 ```HTML
 <head>
   <link rel="stylesheet" href="divplayer.css"/>
